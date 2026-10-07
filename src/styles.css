@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --color-mono-black: #09090b;
+  --color-mono-surfaceDark: #121215;
+  --color-mono-surfaceLight: #fafafa;
+  --color-mono-borderLight: #e4e4e7;
+  --color-mono-borderDark: #27272a;
+  --color-mono-muted: #71717a;
+}
+
+:root {
+  --mono-black: #09090b;
+  --mono-surface-dark: #121215;
+  --mono-surface-light: #fafafa;
+  --mono-border-light: #e4e4e7;
+  --mono-border-dark: #27272a;
+  --mono-muted: #71717a;
+}
+
+html, body {
+  height: 100%;
+  font-family: var(--font-sans);
+}
+
+.font-mono, code, kbd, samp, pre {
+  font-family: var(--font-mono) !important;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom transitions and helper classes */
+.img-fade {
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Dialog backdrop styling */
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Hide hairline live interaction readout text */
+[data-hairline-live],
+span[data-hairline-live] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+}
