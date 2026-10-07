@@ -7,6 +7,8 @@ import { ProjectsModalComponent } from './components/modals/projects-modal.compo
 import { StackModalComponent } from './components/modals/stack-modal.component';
 import { AboutModalComponent } from './components/modals/about-modal.component';
 import { ContactModalComponent } from './components/modals/contact-modal.component';
+import { TechBadgesComponent } from './components/tech-badges/tech-badges.component';
+import { NeuralNodesBackgroundComponent } from './components/neural-nodes-background/neural-nodes-background.component';
 import {
   MENU_ITEMS,
   PREVIEW_MAP,
@@ -18,6 +20,7 @@ import { ModalType, PreviewData } from './core/models/portfolio.model';
 @Component({
   selector: 'app-root',
   imports: [
+    NeuralNodesBackgroundComponent,
     HeaderComponent,
     FooterComponent,
     PreviewCardComponent,
@@ -25,7 +28,8 @@ import { ModalType, PreviewData } from './core/models/portfolio.model';
     ProjectsModalComponent,
     StackModalComponent,
     AboutModalComponent,
-    ContactModalComponent
+    ContactModalComponent,
+    TechBadgesComponent
   ],
   host: {
     class: 'min-h-full lg:h-full flex flex-col justify-between w-full max-w-7xl mx-auto'

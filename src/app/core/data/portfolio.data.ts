@@ -33,7 +33,7 @@ export const PREVIEW_MAP: Record<ModalType, PreviewData> = {
     figureName: 'riffle',
     badge: 'Proyectos & Arquitectura',
     caption: '01 • Proyectos',
-    tech: 'Simbi • Design.md • Anicca',
+    tech: 'Simbi • Enjambre • SOM Studio • Anicca',
     alt: 'Figura interactiva isométrica riffle de proyectos que responde al cursor'
   },
   stack: {
@@ -41,7 +41,7 @@ export const PREVIEW_MAP: Record<ModalType, PreviewData> = {
     figureName: 'cabinet',
     badge: 'Ingeniería & Automatización',
     caption: '02 • Stack Técnico',
-    tech: 'Angular • PHP • n8n • Solidity',
+    tech: 'Angular • WordPress • Elementor • n8n',
     alt: 'Figura interactiva isométrica cabinet de servidores que responde al cursor'
   },
   about: {
@@ -49,7 +49,7 @@ export const PREVIEW_MAP: Record<ModalType, PreviewData> = {
     figureName: 'terrain',
     badge: 'Filosofía & Estructura',
     caption: '03 • Enfoque & Principios',
-    tech: 'Arquitectura Limpia',
+    tech: 'Criterio • Automatización • Producto',
     alt: 'Figura interactiva isométrica terrain que levanta pilares al pasar el cursor'
   },
   contact: {
@@ -64,9 +64,9 @@ export const PREVIEW_MAP: Record<ModalType, PreviewData> = {
 
 export const PROJECTS_DATA: readonly ProjectItem[] = [
   {
-    year: '2026',
+    year: '2024 - 2026',
     category: 'SaaS Multiempresa & IA',
-    title: 'Simbi — Clientes Enjambre',
+    title: 'Simbi',
     description:
       'Plataforma multiempresa para gestión comercial y administrativa de clientes, propuestas, contratos y otrosíes. Integra el asistente inteligente Simbi AI con Function Calling en tiempo real para análisis contextualizado por empresa.',
     tags: [
@@ -77,7 +77,26 @@ export const PROJECTS_DATA: readonly ProjectItem[] = [
       'Simbi AI (Function Calling)',
       'MySQL',
       'CI/CD GitHub Actions'
-    ]
+    ],
+    liveUrl: 'https://mi.simbi.com.co/'
+  },
+  {
+    year: '2025 - 2026',
+    category: 'Creatividad & Marketing Digital',
+    title: 'Enjambre Group',
+    description:
+      'Plataforma web corporativa de alto impacto visual desarrollada para agencia creativa y de producción audiovisual. Diseñada con navegación fluida, arquitectura administrable, animaciones sutiles y optimización técnica integral.',
+    tags: ['WordPress', 'Elementor Pro', 'PHP', 'CSS3', 'SEO'],
+    liveUrl: 'https://enjambregroup.com/'
+  },
+  {
+    year: '2026',
+    category: 'Arquitectura & Portafolio Editorial',
+    title: 'SOM Studio',
+    description:
+      'Sitio web y portafolio interactivo para estudio de arquitectura y obra civil. Exhibe proyectos internacionales de alta gama con tipografía refinada, layouts dinámicos, microinteracciones fluidas y catálogo visual optimizado.',
+    tags: ['WordPress', 'Elementor Pro', 'PHP', 'UI/UX', 'Performance'],
+    liveUrl: 'https://somstudio.co/'
   },
   {
     year: '2026',
@@ -98,7 +117,7 @@ export const PROJECTS_DATA: readonly ProjectItem[] = [
     githubUrl: 'https://github.com/dfv0624/anicca'
   },
   {
-    year: '2026',
+    year: '2025',
     category: 'Automatización & Finanzas',
     title: 'Automatización & Conciliación de Facturas en n8n',
     description:
@@ -111,8 +130,8 @@ export const STACK_CATEGORIES: readonly StackCategory[] = [
   {
     title: 'Front-End & CMS',
     description:
-      'Angular 17-22 (Signals, Standalone Components, SSR), TypeScript, Tailwind CSS, Angular Material, PrimeNG y desarrollo de soluciones administrables en WordPress.',
-    technologies: ['Angular', 'WordPress', 'TypeScript', 'Tailwind CSS', 'Angular Material', 'Signals']
+      'Angular 17-22 (Signals, Standalone Components, SSR), TypeScript, Tailwind CSS, Angular Material, PrimeNG y desarrollo de soluciones corporativas y portafolios en WordPress con Elementor Pro.',
+    technologies: ['Angular', 'WordPress', 'Elementor Pro', 'TypeScript', 'Tailwind CSS', 'Angular Material', 'Signals']
   },
   {
     title: 'APIs & Backend',

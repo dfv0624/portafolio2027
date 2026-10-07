@@ -18,7 +18,7 @@ import {
       (cancel)="handleCancel($event)"
       (click)="handleBackdropClick($event)"
       [attr.aria-labelledby]="titleId()"
-      class="backdrop:bg-black/60 backdrop:backdrop-blur-sm p-0 rounded-xl border border-mono-borderLight dark:border-mono-borderDark bg-white dark:bg-mono-surfaceDark text-mono-black dark:text-white w-[calc(100%-2rem)] max-w-2xl sm:w-full shadow-2xl m-auto max-h-[88vh] overflow-y-auto"
+      class="backdrop:bg-black/60 backdrop:backdrop-blur-sm p-0 rounded-xl border border-mono-borderLight dark:border-mono-borderDark bg-[#faf8f5] dark:bg-mono-surfaceDark text-mono-black dark:text-white w-[calc(100%-2rem)] max-w-2xl sm:w-full shadow-2xl m-auto max-h-[88vh] overflow-y-auto"
       [class.max-w-xl]="isCompact()"
     >
       <div class="p-4 sm:p-6 lg:p-8 space-y-4 sm:space-y-6">

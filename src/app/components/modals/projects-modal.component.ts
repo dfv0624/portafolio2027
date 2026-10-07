@@ -1,10 +1,11 @@
 import { Component, input, output } from '@angular/core';
 import { ProjectItem } from '../../core/models/portfolio.model';
 import { ModalDialogComponent } from './modal-dialog.component';
+import { TechPillComponent } from '../tech-pill/tech-pill.component';
 
 @Component({
   selector: 'app-projects-modal',
-  imports: [ModalDialogComponent],
+  imports: [ModalDialogComponent, TechPillComponent],
   template: `
     <app-modal-dialog
       [isOpen]="isOpen()"
@@ -37,9 +38,9 @@ import { ModalDialogComponent } from './modal-dialog.component';
                     [href]="project.liveUrl"
                     target="_blank"
                     rel="noreferrer"
-                    class="font-mono text-[11px] hover:underline text-emerald-600 dark:text-emerald-400 flex items-center gap-1"
+                    class="font-mono text-[11px] font-medium hover:underline text-emerald-700 dark:text-emerald-400 flex items-center gap-1"
                   >
-                    Demo ↗
+                    Sitio Web ↗
                   </a>
                 }
               </div>
@@ -50,13 +51,9 @@ import { ModalDialogComponent } from './modal-dialog.component';
             <p class="text-sm text-mono-muted mt-1 leading-relaxed">
               {{ project.description }}
             </p>
-            <div class="flex flex-wrap gap-1.5 mt-3">
+            <div class="flex flex-wrap items-center gap-1.5 mt-3 pt-1">
               @for (tag of project.tags; track tag) {
-                <span
-                  class="font-mono text-[10px] px-2 py-0.5 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 border border-mono-borderLight dark:border-mono-borderDark"
-                >
-                  {{ tag }}
-                </span>
+                <app-tech-pill [label]="tag" />
               }
             </div>
           </article>

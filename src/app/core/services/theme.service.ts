@@ -15,26 +15,13 @@ export class ThemeService {
 
   constructor() {
     if (isPlatformBrowser(this.platformId) && typeof window !== 'undefined') {
-      const hasMatchMedia = typeof window.matchMedia === 'function';
       const hasLocalStorage = typeof localStorage !== 'undefined';
       const savedTheme = hasLocalStorage ? localStorage.getItem('theme') : null;
-      const prefersDark = hasMatchMedia
-        ? window.matchMedia('(prefers-color-scheme: dark)').matches
-        : false;
-      const initialDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+      // Por defecto siempre es modo claro ('light'). Solo activa 'dark' si se guardó explícitamente.
+      const initialDark = savedTheme === 'dark';
 
       this.isDarkMode.set(initialDark);
       this.applyThemeToDocument(initialDark);
-
-      if (hasMatchMedia) {
-        const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-        mediaQuery.addEventListener?.('change', (e) => {
-          if (hasLocalStorage && !localStorage.getItem('theme')) {
-            this.isDarkMode.set(e.matches);
-            this.applyThemeToDocument(e.matches);
-          }
-        });
-      }
     }
   }
 
