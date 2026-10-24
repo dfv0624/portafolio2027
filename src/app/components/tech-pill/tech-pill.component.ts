@@ -24,6 +24,7 @@ export type TechIconType =
   | 'elementor'
   | 'ga4'
   | 'vitest'
+  | 'vercel'
   | 'default';
 
 @Component({
@@ -250,6 +251,17 @@ export type TechIconType =
               <path d="M11.545 23.3a.613.613 0 0 1-.895.197L.252 15.936A.61.61 0 0 1 0 15.439V6.325c0-.502.569-.792.975-.497l6.358 4.624c.594.433 1.432.25 1.793-.39L14.393.7a.62.62 0 0 1 .535-.314h8.455a.613.613 0 0 1 .537.916z"/>
             </svg>
           }
+          @case ('vercel') {
+            <!-- Vercel (Oficial Simple Icons) -->
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-3.5 h-3.5 text-neutral-700 dark:text-neutral-300 group-hover:text-black dark:group-hover:text-white transition-colors duration-500"
+              aria-hidden="true"
+            >
+              <path d="M24 22.525H0l12-21.05 12 21.05z"/>
+            </svg>
+          }
           @case ('wordpress') {
             <!-- WordPress (Oficial Simple Icons) -->
             <svg
@@ -427,6 +439,7 @@ export class TechPillComponent {
     if (raw.includes('elementor')) return 'elementor';
     if (raw.includes('ga4') || raw.includes('analytics')) return 'ga4';
     if (raw.includes('vitest')) return 'vitest';
+    if (raw.includes('vercel')) return 'vercel';
     if (raw.includes('webhook')) return 'webhook';
     if (raw.includes('api')) return 'api';
     return 'default';

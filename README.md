@@ -118,11 +118,12 @@ portafolio2027/
 Dentro de la plataforma se exhiben proyectos clave en producción y desarrollo:
 
 1. **Simbi** (*SaaS Multiempresa & IA*): Plataforma comercial y administrativa con asistente Simbi AI, Function Calling contextual por empresa y arquitectura Angular 22 + PHP REST API.
-2. **Enjambre Group** (*Creatividad & Marketing Digital*): Plataforma web corporativa de alto impacto visual y optimización técnica integral.
-3. **SOM Studio** (*Arquitectura & Portafolio Editorial*): Portafolio interactivo para estudio de arquitectura y obra civil con layouts dinámicos y microinteracciones fluidas.
-4. **Design.md Builder** (*IA Generativa & Frontend*): Extractor de tokens visuales y sistemas de diseño a Markdown mediante navegador headless y modelos Google Gemini.
-5. **Anicca Platform** (*Web3 & Creadores*): Plataforma de microcontribuciones en blockchain Celo / MiniPay mediante Smart Contracts en Solidity y Supabase.
-6. **Automatización n8n** (*Automatización & Finanzas*): Workflows autónomos para conciliación de facturas electrónicas y webhooks transaccionales en tiempo real.
+2. **Budismo Colombia** (*Repositorio Conceptual & Frontend*): Repositorio interactivo de filosofía budista con Next.js 16, React 19, navegación por ejes temáticos, búsqueda Ctrl+K y temporizador de contemplación.
+3. **Enjambre Group** (*Creatividad & Marketing Digital*): Plataforma web corporativa de alto impacto visual y optimización técnica integral.
+4. **SOM Studio** (*Arquitectura & Portafolio Editorial*): Portafolio interactivo para estudio de arquitectura y obra civil con layouts dinámicos y microinteracciones fluidas.
+5. **Design.md Builder** (*IA Generativa & Frontend*): Extractor de tokens visuales y sistemas de diseño a Markdown mediante navegador headless y modelos Google Gemini.
+6. **Anicca Platform** (*Web3 & Creadores*): Plataforma de microcontribuciones en blockchain Celo / MiniPay mediante Smart Contracts en Solidity y Supabase.
+7. **Automatización n8n** (*Automatización & Finanzas*): Workflows autónomos para conciliación de facturas electrónicas y webhooks transaccionales en tiempo real.
 
 ---
 

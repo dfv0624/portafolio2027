@@ -33,7 +33,7 @@ export const PREVIEW_MAP: Record<ModalType, PreviewData> = {
     figureName: 'riffle',
     badge: 'Proyectos & Arquitectura',
     caption: '01 • Proyectos',
-    tech: 'Simbi • Enjambre • SOM Studio • Anicca',
+    tech: 'Simbi • Budismo Colombia • SOM Studio • Anicca',
     alt: 'Figura interactiva isométrica riffle de proyectos que responde al cursor'
   },
   stack: {
@@ -79,6 +79,24 @@ export const PROJECTS_DATA: readonly ProjectItem[] = [
       'CI/CD GitHub Actions'
     ],
     liveUrl: 'https://mi.simbi.com.co/'
+  },
+  {
+    year: '2026',
+    category: 'Repositorio Conceptual & Frontend',
+    title: 'Budismo Colombia',
+    description:
+      'Repositorio interactivo y minimalista de conceptos de la filosofía budista para la vida diaria. Organiza 20 conceptos en 4 ejes temáticos con fichas detalladas, términos en pali/sánscrito, ejercicios prácticos, búsqueda rápida por atajos de teclado (Ctrl+K), temporizador de contemplación de 1 minuto y persistencia de progreso.',
+    tags: [
+      'Next.js 16',
+      'React 19',
+      'TypeScript',
+      'Radix UI',
+      'Google Analytics',
+      'SEO & llms.txt',
+      'Vercel'
+    ],
+    githubUrl: 'https://github.com/dfv0624/BudismoColombia',
+    liveUrl: 'https://www.budismocolombia.com'
   },
   {
     year: '2025 - 2026',
